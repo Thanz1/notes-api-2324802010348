@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Báo cáo Bài 1 - Điện toán đám mây</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+        h1, h2 { color: #0366d6; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        th, td { border: 1px solid #d1d5da; padding: 12px; text-align: left; }
+        th { background-color: #f6f8fa; }
+        ul { background-color: #f1f8ff; padding: 20px 20px 20px 40px; border-radius: 6px; }
+        li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Báo cáo Bài 1: Lập trình trên máy ảo đám mây</h1>
+    <p><strong>Họ và tên:</strong> VŨ TRƯỜNG THÀNH | <strong>MSSV:</strong> 2324802010348</p>
+    
+    <h2>1. Bảng so sánh Môi trường (Bước 5)</h2>
+    <table>
+        <tr>
+            <th>Tiêu chí</th>
+            <th>Máy cá nhân</th>
+            <th>Codespace</th>
+        </tr>
+        <tr>
+            <td>Thời gian từ lúc bắt đầu đến khi chạy được node -v</td>
+            <td>Mất nhiều thời gian (cài đặt thủ công bộ cài Node.js, cấu hình biến môi trường PATH)</td>
+            <td>Dưới 2 phút (môi trường được dựng sẵn tự động qua container)</td>
+        </tr>
+        <tr>
+            <td>Số CPU, RAM (từ API)</td>
+            <td>Tùy phần cứng máy (15.7 GB RAM)[cite: 9]</td>
+            <td>2 CPUs, 7.8 GB RAM[cite: 8]</td>
+        </tr>
+        <tr>
+            <td>Hệ điều hành</td>
+            <td>Windows[cite: 9]</td>
+            <td>Linux 6.8.0-1064-azure[cite: 8]</td>
+        </tr>
+        <tr>
+            <td>Cách truy cập từ thiết bị khác</td>
+            <td>Phức tạp (cần cấu hình mạng nội bộ LAN, NAT port router hoặc dùng VPN)</td>
+            <td>Đơn giản, nhanh chóng qua tính năng Port Forwarding / Public URL của đám mây</td>
+        </tr>
+        <tr>
+            <td>Chi phí, đo bằng gì</td>
+            <td>Điện năng tiêu thụ thực tế tại chỗ (kWh)</td>
+            <td>Đo lường chi tiết bằng số Core-giờ (Core-hours) trong mục Billing của GitHub</td>
+        </tr>
+    </table>
+
+    <h2>2. Đối chiếu 5 đặc tính NIST (Bước 6)</h2>
+    <ul>
+        <li><strong>Tự phục vụ theo yêu cầu (On-demand self-service):</strong> Chủ động tự bấm nút tạo và khởi chạy Codespace trực tiếp trên giao diện web của GitHub mà không cần yêu cầu quản trị viên cấp phát phần cứng thủ công.</li>
+        <li><strong>Truy cập mạng diện rộng (Broad network access):</strong> Dễ dàng truy cập ứng dụng API từ xa bằng điện thoại thông minh thông qua đường dẫn Internet công cộng (Public URL).</li>
+        <li><strong>Gộp tài nguyên (Resource pooling):</strong> Chia sẻ hạ tầng phần cứng tập trung từ trung tâm dữ liệu của nhà cung cấp dưới dạng các máy ảo phân đoạn linh hoạt.</li>
+        <li><strong>Co giãn nhanh (Rapid elasticity):</strong> Có khả năng mở rộng hoặc thay đổi cấu hình tài nguyên (CPU, RAM) nhanh chóng theo nhu cầu tải công việc.</li>
+        <li><strong>Dịch vụ đo lường được (Measured service):</strong> Hệ thống tự động theo dõi và ghi nhận chính xác thời gian sử dụng tài nguyên (tính bằng core-giờ) trong mục Billing của tài khoản.</li>
+    </ul>
+</body>
+</html>

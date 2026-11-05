@@ -1,0 +1,24 @@
+{
+  "name": "notes-api-2324802010348",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+"test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thanz1/notes-api-2324802010348.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thanz1/notes-api-2324802010348/issues"
+  },
+  "homepage": "https://github.com/Thanz1/notes-api-2324802010348#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
